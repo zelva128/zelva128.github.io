@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to right, #313030, #9e9393); 
+    align-items: center;      /* Vertikální zarovnání do středu */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+a {
+color: rgb(0, 0, 0);
+}
+
+.prava-strana {
+ float: right;
+margin-left: 50px; 
+} 
+
+.container {
+    background: linear-gradient(to right, rgb(57, 57, 57),rgb(138, 128, 128));
+    float: center;
+    width: 80%;
+    height: auto;
+    margin-left: 8%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid #5b5b5b;
+}
+
+.container2 {
+    background: linear-gradient(to right, rgb(57, 57, 57),rgb(138, 128, 128));
+    float: center;
+    width: 99%;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid #5b5b5b;
+}
+
+.container3 {
+    background: linear-gradient(to right, rgb(57, 57, 57),rgb(138, 128, 128));
+    float: center;
+    width: 99%;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid #5b5b5b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    background: linear-gradient(to right, rgb(43, 43, 43),rgb(108, 101, 101));
+    float: center;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 2px solid #2a2a2a;
+}
+
+/* ----------Animace pro odkazy---------- */
+    /* Základní styl odkazu */
+    .animated-link {
+    background: linear-gradient(to right, rgb(54, 54, 54),rgb(80, 80, 80));
+    padding: 5px 10px;
+    border: 1px solid #020202f9;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+    }
+
+    /* Vytvoření podtržení jako pseudo-element */
+    .animated-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a3afb8;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    }
+
+    /* Animace při najetí myší */
+    .animated-link:hover {
+    color: #d0dbd5;
+    }
+
+    .animated-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
